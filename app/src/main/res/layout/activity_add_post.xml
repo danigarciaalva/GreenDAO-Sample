@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/act_add_post_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"/>
+    <EditText
+        android:id="@+id/act_add_post_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:gravity="top|left"
+        android:hint="Content"/>
+    <EditText
+        android:id="@+id/act_add_post_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Image url"/>
+    <Button
+        android:id="@+id/act_add_post_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar"/>
+</LinearLayout>

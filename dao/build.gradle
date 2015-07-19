@@ -1,0 +1,21 @@
+project(':dao') {
+    apply plugin: 'java'
+    apply plugin: 'application'
+
+    mainClassName = "dflabs.io.Main"
+    outputDatabase = "local/"
+
+    dependencies {
+        compile fileTree(dir: 'libs', include: ['*.jar'])
+        compile('de.greenrobot:DaoGenerator:1.3.0')
+    }
+
+    task createDirs {
+        def dir = file(outputDatabase)
+        dir.mkdirs()
+    }
+
+    run {
+        args outputDatabase
+    }
+}
